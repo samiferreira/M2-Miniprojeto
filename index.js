@@ -40,8 +40,10 @@ ${pets.map((pet, index) => `
           <td>${pet[1]}</td>
           <td>${pet[2]}</td>
           <td>
-            <button onclick="editarPet(${index})">Editar</button>
-            <button onclick="excluirPet(${index})">Excluir</button>
+          <div class="render">
+            <button onclick="editarPet(${index})" id="botoes-1">Editar</button>
+            <button onclick="excluirPet(${index})" id="botoes-1">Excluir</button>
+            </div>
           </td>
         </tr>`).join('')}
     `;
