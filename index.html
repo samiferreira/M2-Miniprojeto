@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro Pet</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
- <div id="container">
-  <div class="image">
-    <img src="/img/undraw_friends_r511.svg" alt="">
-</div>
-<div></div>
- <div class="form">
-    <div class="title">
-      <h2> Cadastre seu Pet</h2>
-    </div>
-     <form id="cadastroPetForm">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <img src="/img/undraw_friends_r511.svg" alt="" />
+      </div>
+      <div class="form">
+        <div class="title">
+          <h2>Cadastre seu Pet</h2>
+        </div>
+        <form id="cadastroPetForm">
           <label for="nomePet">Nome do Pet:</label>
-          <input type="text" id="nomePet" placeholder="Digite o nome do seu Pet">
+          <input
+            type="text"
+            id="nomePet"
+            placeholder="Digite o nome do seu Pet"
+          />
           <label for="especie">Espécie:</label>
-          <input type="text" id="especie" placeholder="Digite a especie do seu Pet" required>
+          <input
+            type="text"
+            id="especie"
+            placeholder="Digite a especie do seu Pet"
+            required
+          />
           <label for="idade">Idade:</label>
-          <input type="number" id="idade" placeholder="Digite a idade do seu Pet">
+          <input
+            type="number"
+            id="idade"
+            placeholder="Digite a idade do seu Pet"
+          />
           <button type="button" onclick="cadastrarPet()">Cadastrar Pet</button>
-      </form>
+        </form>
+      </div>
+      <div></div>
+    </div>
+    <div class="container table-container">
       <div class="tabela">
         <table id="cadastroPetTable">
           <tr>
@@ -35,7 +51,7 @@
           </tr>
         </table>
       </div>
-      </div>
-     <script src="/index.js"></script>
-</body>
-</html
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
