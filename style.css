@@ -1,19 +1,21 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
-
 
 body {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:#9599e2;
-  padding-bottom: 50+px;
- 
+  background-color: #9599e2;
+  padding-bottom: 50px;
 }
+
 
 .container {
   max-width: 1440px;
@@ -21,56 +23,50 @@ body {
   width: 80%;
   height: 80vh;
   display: flex;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
   background-color: white;
   border-radius: 10px;
   padding: 50px;
 }
 
-.table-container{
+.table-container {
   height: fit-content !important;
 }
 
-
-.image{
+.image {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:#9599e2;
+  background-color: #9599e2;
   border-radius: 10px;
 }
 
-.image img{
+.image img {
   width: 31rem;
-
 }
 
-.form{ 
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 3rem;
-
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem;
 }
-
 
 h2 {
-margin-bottom: 50px;
-text-transform: uppercase;
-letter-spacing: 1.5px;
-color:#34344c;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #34344c;
 }
-
 
 table {
   width: 100%;
   border-collapse: collapse;
   outline: 0;
-
 }
 
 th,
@@ -86,9 +82,10 @@ button {
   margin-top: 7px;
   cursor: pointer;
   border-radius: 5px;
-  background-color:#aeb0e2;
+  background-color: #aeb0e2;
   outline: auto;
 }
+
 
 input {
   display: flex;
@@ -101,13 +98,16 @@ input {
   border-radius: 10px;
   box-shadow: 2px 2px 8px #1614141c;
   width: 120%;
+}
 
- 
+input:placeholder-shown {
+  font-size: 15px;
+
 }
 
 label {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  color: #34344c;
 }
 
 .render {
@@ -121,15 +121,12 @@ label {
   margin: 0 7px;
 }
 
-.tabela{
+.tabela {
   width: 100%;
   padding-left: 10px;
 }
 
-#cadastroPetForm{
+#cadastroPetForm {
   margin-bottom: 20px;
-  width: 80%;
-
+  width: 75%;
 }
-
-
